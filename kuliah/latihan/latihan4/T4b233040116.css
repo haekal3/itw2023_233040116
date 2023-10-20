@@ -1,0 +1,114 @@
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaee;
+    background-image: url(logo-baru-inter-milan_169.jpeg);
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    color: black;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 90px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header a {
+    text-decoration: none;
+    color: orangered;
+    padding: 5px;
+}
+
+.header a:hover {
+    border-bottom: 1px solid orangered;
+}
+
+.hero {
+    height: 500px;
+    background-image: url(inter-milan_2406bac.jpg);
+    background-size: cover;
+    background-position: 0px;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid black;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.content .penulis a {
+    text-decoration: none;
+    color: blue;
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.hero2 {
+    height: 500px;
+    background-image: url(inter-milan_b1421bf.jpg);
+    background-size: cover;
+    background-position: 0px;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid black;
+}
+
+.content2 {
+    padding: 20px;
+}
+
+.content2 h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content2 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.content2 h5 a {
+    text-decoration: none;
+    color: blue;
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+
+.footer .copy {
+    color:#eaeaee;
+    text-align: center;
+    font-size: 20px;
+}
