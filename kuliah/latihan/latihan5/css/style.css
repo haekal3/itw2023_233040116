@@ -1,0 +1,189 @@
+/* Font */
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(../fonts/BebasNeue-Regular.woff) format('woff');
+}
+
+/* style Utama*/
+body {
+    font-size: 18px/36px;
+    background: #0141bc;
+    background-size: cover;
+    font-family: 'BebasNeue-Regular', sans-serif;
+}
+
+h1 {
+    font-size: 65px;
+    margin: 15px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    margin:auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /*overflow: hidden;*/
+    border: 5px solid black;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    position: relative;
+}
+.gallery li,
+.gallery li img,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-image: url(../img/20231030_151746.png);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.clear {
+    clear: both;
+}
+
+/*overlay*/
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img {
+    animation: fadeAjah 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.overlay:target .next, .overlay:target .prev {
+    animation: fadeAjah .5s .5s forwards;
+}
+
+/*navigasi*/
+.next, .prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../img/20231025_085001.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/20231025_085028.png);
+    margin-left: -100px;
+}
+
+.footer {
+    background-color: black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.footer .copy {
+    color:#eaeaee;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* animasi */
+@keyframes fadeAjah {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: sclae(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0%{
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
