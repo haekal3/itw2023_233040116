@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="HaekalKhadafy" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">SPECS</h2>
+                <p class="sub-heading">Made with Indonesia</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 800K</h4>
+                <p class="item">Football</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 650K</h4>
+                <p class="item">Futsal</p>
+            </div>
+        </header>
+
+        <!-- Navigasi -->
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>SPECS</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <h3>Football</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et? In quidem sapiente quibusdam sunt?</p>
+            </div>
+            <div class="service">
+                <h3>Futsal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et? In quidem sapiente quibusdam sunt?</p>
+            </div>
+            <div class="service">
+                <h3>Running</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et? In quidem sapiente quibusdam sunt?</p>
+            </div>
+            <div class="service">
+                <h3>Lifestyle</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, et? In quidem sapiente quibusdam sunt?</p>
+            </div>
+        </section>
+
+        <!-- gallery -->
+        <section class="gallery">
+            <h2>GALLERY</h2>
+            <img src="img/Specs1.jpg" alt="">
+            <img src="img/Specs2.jpg" alt="">
+            <img src="img/Specs3.jpg" alt="">
+            <img src="img/Specs4.jpg" alt="">
+            <img src="img/Specs5.jpg" alt="">
+            <img src="img/Specs6.jpg" alt="">
+            <img src="img/Specs7.jpg" alt="">
+            <img src="img/Specs8.jpg" alt="">
+        </section>
+    </div>
+
+    <!-- Js -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input')
+        const nav= document.querySelector('nav ul')
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
